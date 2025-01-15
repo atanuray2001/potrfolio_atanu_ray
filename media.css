@@ -1,0 +1,140 @@
+@media screen and (max-width:1370px) {
+    
+
+    .main {
+        width: 85%;
+    }
+
+
+}
+
+
+
+
+
+/* mobile screen  */
+
+@media screen and (max-width:768px) {
+
+    p {
+        font-size: 13px;
+    }
+    
+
+    .cover_area {
+        background-position: -103% -63%;
+    }
+
+    .main {
+        width: 95%;
+        padding-bottom: 80px;
+    }
+
+    .profile_area_main {
+        flex-direction: column;
+        z-index: 101;
+    }
+
+    .profile_left {
+        flex-direction: column;
+        width: 100%;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .profile_left_name {
+        padding: 0;
+        margin-top: 170px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile_left_name h1 {
+        line-height: 30px;
+        font-size: 40px;
+    }
+
+
+    .profile_right {
+        width: 100%;
+        border: none;
+        text-align: center;
+        margin-top: 30px;
+        gap: 20px;
+    }
+
+    .bio_area {
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .bio_box {
+        padding: 20px;
+    }
+
+    .bio_left {
+        position: fixed;
+        bottom: 10px;
+        top: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: row;
+        width: 90%;
+        z-index: 100;
+        gap: 5px;
+        padding: 5px;
+        border-radius: 12px;
+    }
+
+    .bio_left h1 {
+        font-size: 15px;
+        height: 50px;
+    }
+
+    .bio_right {
+        width: 100%;
+    }
+
+
+    .about_top {
+        flex-direction: column;
+    }
+
+    .about_top_left {
+        width: 100%;
+        height: 350px;
+    }
+
+    .about_top_right {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+
+
+
+    .job {
+        padding: 20px;
+    }
+
+    .job_top {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .edu_box {
+        width: 100%;
+        padding: 25px;
+    }
+
+
+
+
+
+
+    .copyright {
+        padding-top: 15px;
+    }
+}
