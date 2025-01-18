@@ -95,6 +95,11 @@
         width: 100%;
     }
 
+    .bio_sub_head {
+        line-height: 25px;
+        letter-spacing: 3px;
+    }
+
 
     .about_top {
         flex-direction: column;
@@ -138,6 +143,24 @@
         white-space: nowrap;
     }
 
+    
+
+    .skill_box {
+        width: 100%;
+    }
+
+
+    .contact_page {
+        flex-direction: column;
+    }
+    .cont_left {
+        width: 100%;
+        padding: 20px;
+    }
+    .cont_right {
+        width: 100%;
+        padding: 20px;
+    }
 
 
 
