@@ -329,7 +329,7 @@ a {
 }
 
 .designation h3{
-    color: #a7a7a7;
+    color: #777777;
     font-family: gil-r;
     letter-spacing: 1px;
 }
@@ -540,9 +540,77 @@ a {
     height: 100%;
     background: linear-gradient(to right, white, crimson);
     border-radius: 5px;
-    width: var(--p);
+    width: 0%;
 }
 
+
+
+
+
+
+
+
+
+/* project page  */
+
+.project_page {
+    flex-direction: column;
+    align-items: center;
+}
+
+.project_head {
+    margin-bottom: 20px;
+}
+
+.project {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project_page a {
+    width: 31%;
+}
+
+.project_box {
+    width: 100%;
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+    transition: all .4s;
+    border-radius: 10px;
+    padding: 30px;
+}   
+
+.project_box img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+    transition: all 3s ease-in-out;
+}
+
+.project_box h3 {
+    transition: all .3s;
+    margin-top: 15px;
+}
+
+.project_box:hover {
+    background: crimson;
+}
+.project_box:hover img {
+    object-position: bottom;
+}
+.project_box:hover h3 {
+    color: white;
+}
+
+.project_head2 {
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
 
 
 
