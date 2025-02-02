@@ -132,3 +132,72 @@ contactBtn.addEventListener("click", () => {
 // buttons.forEach((btn, index) => {
 //     btn.addEventListener("click", () => activateSection(index));
 // });
+
+
+
+
+// let bar = document.querySelectorAll(".skill_pers_bar")
+// let text = document.querySelectorAll(".skill_pers_text")
+// text.forEach(function(e){
+//     console.log(e.innerHTML)
+//     })
+
+//     bar.forEach(function(b){
+//         console.log(b)
+//     })
+
+    
+
+
+// bar.forEach(function(e){
+//     console.log(e.getAttribute("style"))
+
+//     let tl = gsap.timeline()
+    
+//     tl.to(e,{
+//         width : "100%",
+//         delay : 5,
+//         // clutter : 2,
+//     })
+// })
+
+
+// let tl = gsap.timeline()
+    
+// tl.to(bar,{
+//     width : "100%",
+//     duration : 2,
+//     delay : 5,
+//     // clutter : 2,
+// })
+
+
+
+
+let bars = document.querySelectorAll(".skill_pers_bar");
+let texts = document.querySelectorAll(".skill_pers_text");
+
+
+
+
+
+
+window.addEventListener("scroll",()=>{
+    if(window.pageYOffset > 700) {
+
+        bars.forEach((bar, index) => {
+            let percentage = parseInt(texts[index].innerText); // Get number from text
+            if (!isNaN(percentage)) {
+                gsap.to(bar, {
+                    width: `${percentage}%`, // Set width based on the number
+                    duration: 2, // Animation duration
+                    // delay: 5, // Start after 1 second
+                    ease: "linear",
+                });
+            }
+            // console.log(bar,index)
+            // console.log(percentage)
+        });
+
+    }
+})
